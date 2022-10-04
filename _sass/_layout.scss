@@ -3,8 +3,8 @@
  */
  .site-header {
     border-top: 5px solid $border-color-03;
-    border-bottom: 1px solid $border-color-01;
-    min-height: $spacing-unit * 1.865;
+    // border-bottom: 1px solid $border-color-01;
+    // min-height: $spacing-unit * 1.865;
     line-height: $base-line-height * $base-font-size * 2.25;
   
     // Positioning context for the mobile navigation icon
@@ -146,6 +146,10 @@
     color: $lm-text-color;
   }
 
+  .about-col {
+    text-align: justify;
+  }
+
   .footer-col-wrapper,
   .social-links {
     @include relative-font-size(0.9375);
@@ -181,10 +185,11 @@
   
   @media screen and (min-width: $on-medium) {
     .footer-col-wrapper {
-      display: flex
+      display: flex;
     }
     .col-wrapper {
         display: flex;
+        margin: 20px 0 40px 0;
     }
   
     .footer-col {
@@ -264,7 +269,24 @@
   .me-pic-col {
     text-align: center;
   }
+
+  .col ul {
+    margin-left: 20px;
+    list-style:disc;
+  }
+
+  .col-info {
+    margin-top: 100px;
+  }
+
+  .col ul li {
+    margin-bottom: 8px;
+  }
   
+  .col ul li::marker {
+    color: #525252;
+  }
+
   /**
    * Posts
    */
