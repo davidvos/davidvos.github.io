@@ -33,6 +33,16 @@ github_username:  davidvos
 theme: minima
 plugins:
   - jekyll-feed
+author:
+  name: 'David Vos'
+  email: 'vos.dja@gmail.com'
+minima:
+  date_format: "%b %-d, %Y"
+  # generate social links in footer
+  social_links:
+    twitter: dja_vos
+    github:  davidvos
+    linkedin: davidjavos
 
 # Exclude from processing.
 # The following items will not be processed, by default.

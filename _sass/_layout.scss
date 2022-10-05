@@ -139,6 +139,7 @@
   .social-media-list {
     list-style: none;
     margin-left: 0;
+    text-align: center
   }
   
   .col {
@@ -268,6 +269,20 @@
 
   .me-pic-col {
     text-align: center;
+  }
+
+  .button {
+    padding: 4px 40px;
+    border: 1px solid #2a7ae2;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+  }
+
+  .button:hover {
+    border: 1px solid #8fbaff;
+    text-decoration: none;
+    color: #8fbaff;
   }
 
   .col ul {
