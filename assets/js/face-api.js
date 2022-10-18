@@ -27,14 +27,14 @@ video.addEventListener('play', () => {
 
         if (happiness > 0.5 && current_state != 'happy') {
             //open a get request with the remote server URL
-            xhr.open("GET", "http://raspberrypi:8080/light/0/on")
+            xhr.open("GET", "https://raspberrypi:8080/light/0/on")
             current_state = 'happy'
             console.log('now happy on')
         }
 
         if (angriness > 0.5 && current_state != 'angry') {
              //open a get request with the remote server URL
-            xhr.open("GET", "http://raspberrypi:8080/light/0/off")
+            xhr.open("GET", "https://raspberrypi:8080/light/0/off")
             current_state = 'angry'
             console.log('now angry off')
         }
