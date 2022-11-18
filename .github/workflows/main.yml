@@ -12,4 +12,3 @@ jobs:
           start: docker-compose up
           wait-on: "http://localhost:4000"
           browser: chrome
-          headless: true
