@@ -10,5 +10,5 @@ jobs:
         uses: cypress-io/github-action@v4.2.0
         with:
           start: docker-compose -f "../../docker-compose.yml" up -d --build
-          wait-on: "http://localhost:4000"
+          wait-on: "https://0.0.0.0:4000"
           browser: chrome
