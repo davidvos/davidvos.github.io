@@ -1,14 +1,13 @@
 name: Cypress Tests
+
 on: [push]
+
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2.5.0
+      - uses: actions/checkout@v2.5.0
+      - name: Build the App
+        run: docker-compose up -d --build
       - name: Cypress.io
         uses: cypress-io/github-action@v4.2.0
-        with:
-          start: docker-compose -f "docker-compose.yml" up -d --build
-          wait-on: "http://localhost:4000"
-          browser: chrome
