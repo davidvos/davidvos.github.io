@@ -1,5 +1,25 @@
 {
   "dependencies": {
     "face-api.js": "^0.20.1"
-  }
+  },
+  "devDependencies": {
+    "cypress": "^11.1.0"
+  },
+  "name": "davidvos.github.io",
+  "description": "My personal website.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidvos/davidvos.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidvos/davidvos.github.io/issues"
+  },
+  "homepage": "https://github.com/davidvos/davidvos.github.io#readme"
 }
