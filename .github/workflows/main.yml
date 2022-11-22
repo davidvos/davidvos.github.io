@@ -8,8 +8,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Build Jekyll
-        run: jekyll serve --watch --force_polling --verbose
+      - name: Build
+        uses: jerryjvl/jekyll-build-action@v1
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
       - name: Cypress run
