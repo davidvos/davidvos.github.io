@@ -9,6 +9,6 @@ jobs:
       - name: Cypress.io
         uses: cypress-io/github-action@v4.2.0
         with:
-          start: docker-compose -f "docker-compose.yml" up -d --build
+          start: docker-compose up -d --build
           wait-on: "http://localhost:4000"
           browser: chrome
