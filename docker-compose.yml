@@ -5,6 +5,9 @@ services:
     image: jekyll/jekyll:latest
     command: jekyll serve --watch --force_polling --verbose
     hostname: localhost
+    environment:
+      JEKYLL_UID: 1001
+      JEKYLL_GID: 1001
     ports:
       - 4000:4000
     volumes:
