@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2.5.0
       - name: Build the App
-        run: docker-compose up -d --build
+        run: docker-compose up -d --build --network="host"
       - name: Cypress.io
         uses: cypress-io/github-action@v4.2.0
         with:
