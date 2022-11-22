@@ -7,12 +7,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Build Jekyll site
-        run: |
-          docker run \
-            -v ${{ github.workspace }}:/srv/jekyll \
-            jekyll/jekyll:latest \
-            bundle install \
-            /bin/bash -c 'chmod 777 /srv/jekyll && bundle exec jekyll build --future'
+      - name: Start Docker Container
+        run: docker-compose up --build
       - name: Cypress run
         uses: cypress-io/github-action@v4.2.0
+
+    # Service containers to run with `container-job`
+    services:
+      # Label used to access the service container
+      jekyll:
+        # Docker Hub image
+        image: jekyll/jekyll:latest
