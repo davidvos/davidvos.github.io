@@ -3,10 +3,14 @@ name: Cypress Tests
 on: [push]
 
 jobs:
-  build:
+  cypress-run:
+    runs-on: ubuntu-latest
     steps:
-    - checkout
-    - run: docker-compose build
-    - run: docker-compose up --abort-on-container-exit --exit-code-from e2e
-    # confirms Cypress ran correctly by looking at the output file
-    - run: cat e2e/cypress/results/output.xml
+      - uses: actions/checkout@v2.5.0
+
+      - name: Docker compose up
+        run: docker-compose up --abort-on-container-exit --exit-code-from e2e
+
+      # confirms Cypress ran correctly by looking at the output file
+      - name: Check Cypress output
+        run: cat e2e/cypress/results/output.xml
