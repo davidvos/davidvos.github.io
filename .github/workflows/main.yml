@@ -8,10 +8,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build Jekyll site
-          run: |
-            docker run \
-              -v ${{ github.workspace }}:/srv/jekyll \
-              jekyll/builder:4.2.0 \
-              /bin/bash -c 'chmod 777 /srv/jekyll && bundle exec jekyll build --future'
+        run: |
+          docker run \
+            -v ${{ github.workspace }}:/srv/jekyll \
+            jekyll/builder:4.2.0 \
+            /bin/bash -c 'chmod 777 /srv/jekyll && bundle exec jekyll build --future'
       - name: Cypress run
         uses: cypress-io/github-action@v4.2.0
