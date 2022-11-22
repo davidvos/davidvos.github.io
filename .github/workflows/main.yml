@@ -1,13 +1,14 @@
-name: Cypress Tests
-
-on: [push]
-
+version: 2
 jobs:
-  cypress-run:
-    runs-on: ubuntu-latest
+  build:
     steps:
-      - uses: actions/checkout@v2
-      - name: Cypress run
-        uses: cypress-io/github-action@v4.2.0
-        with:
-          start: docker-compose up -d
+    - checkout
+    - run: docker-compose build
+    - run: docker-compose up --abort-on-container-exit --exit-code-from e2e
+    # confirms Cypress ran correctly by looking at the output file
+    - run: cat e2e/cypress/results/output.xml
+workflows:
+  build:
+    jobs:
+    - build
+  version: 2
