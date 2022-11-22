@@ -12,7 +12,7 @@ services:
 
   e2e:
     image: cypress
-    build: ./e2e
+    build: ./cypress/e2e
     container_name: cypress
     depends_on:
       - jekyll
@@ -33,5 +33,5 @@ services:
     #     machine immediately takes effect within the e2e container (no docker
     #     rebuild required).
     volumes:
-      - ./e2e/cypress:/app/cypress
-      - ./e2e/cypress.config.js:/app/cypress.config.js
+      - ./cypress/e2e/cypress:/app/cypress
+      - ./cypress/e2e/cypress.config.js:/app/cypress.config.js
