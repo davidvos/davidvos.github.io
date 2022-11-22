@@ -11,3 +11,5 @@ jobs:
         run: docker-compose up -d --build
       - name: Cypress.io
         uses: cypress-io/github-action@v4.2.0
+        with:
+          wait-on: "http://localhost:4000"
