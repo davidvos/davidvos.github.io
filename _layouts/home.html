@@ -1,89 +1,137 @@
 ---
-layout: 'default'
+layout: default
 ---
 
-<div class="col-wrapper">
-    <div class="col me-pic-col">
-        <img src="media/me.jpg" class="me-pic">
+<section class="home-hero">
+  <div class="home-hero__media">
+    <img src="media/me.jpg" alt="Portrait of David Vos" class="home-hero__image">
+  </div>
+  <div class="home-hero__content">
+    <p class="home-hero__eyebrow">PhD Student · Recommender Systems</p>
+    <h1>David Vos</h1>
+    <p class="home-hero__lead">
+      I am a PhD student at the
+      <a href="https://irlab.science.uva.nl/" target="_blank">Information Retrieval Lab Amsterdam</a>, where I study representation learning, generative modeling, and ranking for personalized recommendations and search.
+      I collaborate with the <a href="https://icai.ai/icai-labs/rem/" target="_blank">Responsible Media Lab</a> to apply my research at
+      <a href="https://www.dpgmediagroup.com/en-NL" target="_blank">DPG Media</a>.
+    </p>
+    <!-- <p>
+      My research spans information retrieval, natural language processing, and responsible machine learning for media production.
+      I enjoy working with interdisciplinary teams to build reliable, data-driven products.
+    </p> -->
+    <div class="home-hero__actions">
+      <a href="media/David Vos CV.pdf" target="_blank" class="btn btn-primary">Download CV</a>
+      <a href="mailto:d.j.a.vos@uva.nl" target="_blank" class="btn">Email me</a>
     </div>
-    <div class="col about-col">
-        <h1>David Vos</h1>
-        <p>I am a PhD student at the <a href="https://irlab.science.uva.nl/" target="_blank">IRLab Amsterdam</a>, working on generative methods for news content. I am a part of the <a href="https://icai.ai/icai-labs/rem/" target="_blank">Responsible Media ICAI Lab</a> partnering with <a href="https://www.dpgmediagroup.com/research-on-ai-at-dpg-m" target="_blank">DPG Media</a>.</p>
-        <p>My research focuses on the domains of information retrieval, natural language processing and machine learning.</p>
-        <p>Feel free to reach out to me with (BSc or MSc) thesis supervision requests or with ideas for a potential research collaboration.</p>
+    <p class="home-hero__note">
+      I am open to thesis supervision requests and research collaborations.
+    </p>
+  </div>
+</section>
 
-        <a href="media/David Vos CV.pdf" target="_blank" class="button">My CV</a>
-        <a href="mailto:d.j.a.vos@uva.nl" target="_blank" class="button">Contact Me</a>
-    </div>
-</div>
+<section class="home-section">
+  <header class="home-section__header">
+    <h2>Selected Publications</h2>
+  </header>
+  <article class="card card--publication">
+    <h3>
+      <a href="https://openreview.net/pdf?id=8kyYJs2YkFH" target="_blank">
+        Parameter-Efficient Automation of Data Wrangling Tasks with Prefix-Tuning
+      </a>
+    </h3>
+    <p class="card__meta">
+      David Vos, Till Döhmen, Sebastian Schelter · The Table Representation Learning Workshop @ NeurIPS 2022
+    </p>
+    <p class="card__note">
+      Recognised as Best Paper Runner-up
+    </p>
+  </article>
+  <article class="card card--publication">
+    <h3>
+      <a href="https://arxiv.org/pdf/2501.11391" target="_blank">
+        Revisiting Language Models in Neural News Recommender Systems
+      </a>
+    </h3>
+    <p class="card__meta">
+      Yuyue Zhao, Jin Huang, David Vos, Maarten de Rijke · ECIR 2025
+    </p>
 
+  </article>
+</section>
 
-<div class="col-wrapper col-info">
-    <div class="col">
-
-        <h2>Publications 📝</h2>
-        <ul>
-            <li>
-                <b><a href="https://openreview.net/pdf?id=8kyYJs2YkFH" target="_blank">Parameter-Efficient Automation of Data Wrangling Tasks with Prefix-Tuning</a></b></br>
-                David Vos, Till Döhmen, Sebastian Schelter<br>
-                In <i>The Table Representation Learning Workshop @ NeurIPS 2022</i><br>
-                Won the Best paper runner-up award 🥈
-            </li>
-            <!-- <li>
-                <b>Language control prefixes: Conditional prefix-tuning for efficient multilingual data-to-text generation in low-resource languages</b><br>
-                <b>David Vos</b>, Sebastian Schelter<br>
-                Master thesis in Artificial Intelligence
-            </li> -->
-        </ul>
-
-        <h2>Education 🎓</h2>
-        <ul>
-            <li>
-                <b>Master in Artificial Intelligence</b><br>
-                University of Amsterdam<br>
-                GPA: 8.2/10, cum laude<br>
-            </li>
-            <li>
-                <b>Minor in Computer Science</b><br>
-                University of Edinburgh<br>
-            </li>
-            <li>
-                <b>Bachelor in Artificial Intelligence</b><br>
-                University of Amsterdam<br>
-                GPA: 8.3/10, cum laude<br>
-                <i>Completed the official honours programme</i>
-            </li>
-        </ul>
-
-        <h2>Talks 🎙️</h2>
-        <ul>
-            <li>
-                <a href="https://slideslive.com/38993351" target="_blank">NeurIPS 2022 TRL Workshop</a> on prefix-tuning for data wrangling.
-            </li>
-            <li>
-                Talk for the ING Data Science team on LLMs for data management.
-            </li>
-            <li>
-                <a href="https://www.youtube.com/watch?v=QfqMG5u2Rms" target="_blank">The Dutch Seminar on Data Systems Design</a> on prefix-tuning for data wrangling.
-            </li>
-        </ul>
-
-    </div>
-    <div class="col">
-        <h2>Sample of my work 👨🏼‍💻</h2>
-        <ul>
-            <li>Worked at the <a href="https://indelab.org/" target="_blank">UvA INDE Lab</a> as a visiting researcher on employing Large Language Models for data management.</li>
-            <li>My <a href='media/thesis.pdf' target="_blank">master thesis</a> on prefix-tuning for multilingual data-to-text generation.</li>
-            <li>I did an internship at <a href='https://www.dpgmediagroup.com/en-NL/in-conversation-with-creators-maarten-deville-on-artificial-intelligence-at-vtm-go' target="_blank">DPG Media (Recommendation & Search)</a>, the biggest media publisher in the Netherlands.</li>
-            <li>I worked at <a href='https://www.a-insights.eu/en' target="_blank">A-INSIGHTS</a> as a data engineer on creating efficient data pipelines to provide market insights.</li>
-            <li>I worked at <a href='https://site.finly.nl' target="_blank">Finly</a> as a web developer on an application to help (insurance) companies efficiently communicate with their clients.</li>
-            <li>A very small <a href='https://chrome.google.com/webstore/detail/close-all-stack-overflow/doiooledckdcghpcbgdfbbohekpgiokl' target="_blank" class="plugin-link">Chrome plugin</a> to quickly close Stack Overflow tabs.</li>
-            <li><a href="media/David Vos CV.pdf" target="_blank">More things I have worked on...</a></li>
-        </ul>
-
-        <h2>Some of my skills 🎯</h2>
-        <b>Programming:</b> Python <i>(advanced)</i>, SQL <i>(advanced)</i>, Javascript <i>(advanced)</i>, Latex <i>(advanced)</i>, Go <i>(intermediate)</i>, PHP <i>(intermediate)</i>, Java <i>(intermediate)</i>, R <i>(intermediate)</i>, C <i>(beginner)</i>, Rust <i>(beginner)</i><br>
-        <b>Frameworks:</b> PyTorch <i>(advanced)</i>, Django & Flask <i>(advanced)</i>, Laravel <i>(advanced)</i>, React <i>(intermediate)</i><br>
-        <b>Languages:</b> Dutch <i>(native)</i>, English <i>(fluent, C2 level with CPE certificate)</i>, German <i>(intermediate, B2 level)</i>
-    </div>
-</div>
+<section class="home-section home-section--split">
+  <div>
+    <h2>Education</h2>
+    <ul class="timeline">
+      <li>
+        <h3>Master in Artificial Intelligence</h3>
+        <p>University of Amsterdam</p>
+        <p class="timeline__detail">GPA 8.2/10 · Graduated cum laude</p>
+      </li>
+      <li>
+        <h3>Minor in Computer Science</h3>
+        <p>University of Edinburgh</p>
+      </li>
+      <li>
+        <h3>Bachelor in Artificial Intelligence</h3>
+        <p>University of Amsterdam</p>
+        <p class="timeline__detail">GPA 8.3/10 · Cum laude · Honours programme</p>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <h2>Recent Talks</h2>
+    <ul class="list-with-icons">
+    <li>
+        Lectures on text representation learning, sequential recommender systems and transformers at the University of Amsterdam.
+      </li>
+      <li>
+        <a href="https://searchfutures.github.io/" target="_blank">Search Futures Workshop</a> · The Role of LLMs in Democratic News RecSys.
+      </li>
+      <li>
+        <a href="https://slideslive.com/38993351" target="_blank">NeurIPS 2022 TRL Workshop</a> · Prefix-tuning for data wrangling.
+      </li>
+      <li>
+        Talk for the ING Data Science team on LLMs for data management.
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=QfqMG5u2Rms" target="_blank">Dutch Seminar on Data Systems Design</a> · Prefix-tuning for data wrangling.
+      </li>
+    </ul>
+  </div>
+</section>
+<!-- 
+<section class="home-section home-section--split">
+  <div>
+    <h2>Selected Projects & Collaborations</h2>
+    <ul class="list-with-icons">
+        <li>
+            I helped organize ESSIR, the European Summer School in Information Retrieval, held in Amsterdam in August 2023.
+        </li>
+        <li>
+            Supervised student projects as part of Information Retrieval (IR1, IR2) and Recommender Systems (RecSys) courses at the University of Amsterdam.
+        </li>
+        <li>
+            Supervised UvA thesis students working on bias in LLMs, fairness in recommendation systems, and learning to rank.
+        </li>
+      <li>
+        Visiting researcher at the <a href="https://indelab.org/" target="_blank">Intelligent Data Engineering Lab</a> on data management with large language models.
+      </li>
+      <li>
+        <a href="media/thesis.pdf" target="_blank">My Master thesis</a> on prefix-tuning for multilingual data-to-text generation.
+      </li>
+      <li>
+        I worked on a personalized newsletter at <a href="https://www.dpgmediagroup.com/en-NL/in-conversation-with-creators-maarten-deville-on-artificial-intelligence-at-vtm-go" target="_blank">DPG Media</a>, the Netherlands’ largest media publisher.
+      </li>
+      <li>
+        Data engineer at <a href="https://www.a-insights.eu/en" target="_blank">A-INSIGHTS</a> delivering market insights through production-grade data pipelines.
+      </li>
+      <li>
+        Web developer at <a href="https://site.finly.nl" target="_blank">Finly</a> building communication tools for insurance providers.
+      </li>
+      <li>
+        Creator of a <a href="https://chrome.google.com/webstore/detail/close-all-stack-overflow/doiooledckdcghpcbgdfbbohekpgiokl" target="_blank">Chrome extension</a> to quickly close Stack Overflow tabs.
+      </li>
+    </ul>
+  </div>
+</section> -->
