@@ -141,6 +141,7 @@ a:focus {
       }
     }
   }
+
   
   
   
@@ -484,6 +485,7 @@ a:focus {
   .home-section--split h2 {
     margin-top: 0;
     margin-bottom: $spacing-unit / 2;
+    @include relative-font-size(1.5);
   }
 
   .timeline {
@@ -497,6 +499,16 @@ a:focus {
     position: relative;
     padding-left: $spacing-unit;
     margin-bottom: $spacing-unit;
+  }
+
+  .timeline h3 {
+    margin: 0;
+    @include relative-font-size(1.2);
+    line-height: 1.35;
+  }
+
+  .timeline p {
+    margin: 0.15rem 0 0;
   }
 
   .timeline li:last-child {
