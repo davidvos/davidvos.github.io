@@ -346,6 +346,10 @@ a:focus {
     font-size: 1.12rem;
     line-height: 1.75;
     margin-bottom: $spacing-unit / 2;
+
+    @media screen and (max-width: 540px) {
+      font-size: 1rem;
+    }
   }
 
   .home-hero__content p {
@@ -356,6 +360,11 @@ a:focus {
     @media screen and (max-width: 959px) {
       margin-left: auto;
       margin-right: auto;
+      text-align: left;
+    }
+
+    @media screen and (min-width: 960px) {
+      text-align: justify;
     }
   }
 
@@ -367,6 +376,16 @@ a:focus {
 
     @media screen and (max-width: 959px) {
       justify-content: center;
+    }
+
+    @media screen and (max-width: 540px) {
+      flex-direction: column;
+      align-items: stretch;
+      gap: $spacing-unit / 3;
+      width: 100%;
+      max-width: 22rem;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
@@ -390,6 +409,16 @@ a:focus {
     text-decoration: none;
     transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
     background: rgba(#ffffff, 0.8);
+    box-sizing: border-box;
+    max-width: 100%;
+    text-align: center;
+    white-space: normal;
+
+    @media screen and (max-width: 540px) {
+      width: 100%;
+      padding: 0.7rem 1.1rem;
+      min-height: 2.75rem;
+    }
   }
 
   .btn:hover,
@@ -426,16 +455,28 @@ a:focus {
 
   .home-section {
     margin-top: $spacing-unit * 2.5;
+
+    @media screen and (max-width: 540px) {
+      margin-top: $spacing-unit * 1.75;
+    }
   }
 
   .home-section__header {
     margin-bottom: $spacing-unit;
     padding-bottom: $spacing-unit / 3;
-    border-bottom: 1px solid lighten($border-color-02, 18%);
+    border-bottom: none;
+
+    @media screen and (max-width: 540px) {
+      margin-bottom: $spacing-unit * 0.75;
+      padding-bottom: $spacing-unit / 4;
+    }
   }
   
   .home-section__header h2 {
     margin: 0;
+    @media screen and (max-width: 540px) {
+      @include relative-font-size(1.5);
+    }
   }
 
   .card {
@@ -478,37 +519,60 @@ a:focus {
     padding: $spacing-unit * 1.2;
     background: #ffffff;
     border-radius: 8px;
-    border: 1px solid lighten($border-color-02, 12%);
+    border: none;
     box-shadow: none;
+
+    @media screen and (max-width: 540px) {
+      padding: $spacing-unit;
+    }
   }
 
   .home-section--split h2 {
     margin-top: 0;
     margin-bottom: $spacing-unit / 2;
     @include relative-font-size(1.5);
+
+    @media screen and (max-width: 540px) {
+      @include relative-font-size(1.4);
+    }
   }
 
   .timeline {
     list-style: none;
     margin: 0;
     padding-left: $spacing-unit;
-    border-left: 2px solid lighten($border-color-02, 10%);
+
+    @media screen and (max-width: 540px) {
+      padding-left: $spacing-unit * 0.7;
+    }
   }
 
   .timeline li {
     position: relative;
     padding-left: $spacing-unit;
     margin-bottom: $spacing-unit;
+
+    @media screen and (max-width: 540px) {
+      padding-left: $spacing-unit * 0.85;
+      margin-bottom: $spacing-unit * 0.85;
+    }
   }
 
   .timeline h3 {
     margin: 0;
     @include relative-font-size(1.2);
     line-height: 1.35;
+
+    @media screen and (max-width: 540px) {
+      @include relative-font-size(1.1);
+    }
   }
 
   .timeline p {
     margin: 0.15rem 0 0;
+    @media screen and (max-width: 540px) {
+      font-size: 0.95rem;
+    }
   }
 
   .timeline li:last-child {
@@ -518,13 +582,13 @@ a:focus {
   .timeline li::before {
     content: "";
     position: absolute;
-    left: -($spacing-unit / 2);
-    top: 0.45rem;
-    width: 12px;
-    height: 12px;
+    left: -($spacing-unit * 0.4);
+    top: 0.42rem;
+    width: 8px;
+    height: 8px;
     border-radius: 999px;
     background: #2f4f7f;
-    box-shadow: 0 0 0 4px rgba(#2f4f7f, 0.18);
+    box-shadow: 0 0 0 2px rgba(#2f4f7f, 0.22);
   }
 
   .timeline__detail {
@@ -536,25 +600,34 @@ a:focus {
   .list-with-icons {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding-left: $spacing-unit;
+
+    @media screen and (max-width: 540px) {
+      padding-left: $spacing-unit * 0.7;
+    }
   }
 
   .list-with-icons li {
     position: relative;
-    padding-left: 1.75rem;
-    margin-bottom: 0.85rem;
+    padding-left: $spacing-unit;
+    margin-bottom: $spacing-unit * 0.45;
+
+    @media screen and (max-width: 540px) {
+      padding-left: $spacing-unit * 0.85;
+      margin-bottom: $spacing-unit * 0.35;
+    }
   }
 
   .list-with-icons li::before {
     content: "";
     position: absolute;
-    left: 0;
-    top: 0.55rem;
-    width: 0.45rem;
-    height: 0.45rem;
+    left: -($spacing-unit * 0.4);
+    top: 0.42rem;
+    width: 8px;
+    height: 8px;
     border-radius: 999px;
     background: #2f4f7f;
-    box-shadow: 0 0 0 4px rgba(#2f4f7f, 0.14);
+    box-shadow: 0 0 0 2px rgba(#2f4f7f, 0.22);
   }
 
   .list-with-icons li:last-child {
