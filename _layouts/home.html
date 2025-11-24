@@ -7,7 +7,7 @@ layout: default
     <img src="media/me.jpg" alt="Portrait of David Vos" class="home-hero__image">
   </div>
   <div class="home-hero__content">
-    <p class="home-hero__eyebrow">PhD Student · Recommender Systems</p>
+    <p class="home-hero__eyebrow">PhD Student · Information Retrieval</p>
     <h1>David Vos</h1>
     <p class="home-hero__lead">
       I am a PhD student at the
@@ -20,42 +20,22 @@ layout: default
       I enjoy working with interdisciplinary teams to build reliable, data-driven products.
     </p> -->
     <div class="home-hero__actions">
-      <a href="media/David Vos CV.pdf" target="_blank" class="btn btn-primary">Download CV</a>
+      <a href="media/David Vos CV.pdf" target="_blank" class="btn btn-primary">Resume</a>
       <a href="mailto:d.j.a.vos@uva.nl" target="_blank" class="btn">Email me</a>
       {%- if site.scholar_url -%}
       <a href="{{ site.scholar_url }}" target="_blank" rel="noopener" class="btn">Google Scholar</a>
       {%- endif -%}
     </div>
     <p class="home-hero__note">
-      I am open to thesis supervision requests and research collaborations.
+      Actively seeking research internships in recommender systems, search and related areas. Also open to research collaborations.
     </p>
   </div>
 </section>
 
 <section class="home-section">
-  <header class="home-section__header">
+    <header class="home-section__header">
     <h2>Selected Research</h2>
   </header>
-  <article class="card card--publication">
-    <h3>
-      <a href="#" target="_blank">
-        Reliable and Controllable Learned Sparse News Recommendations for Short-History Users
-      </a>
-    </h3>
-    <p class="card__meta">
-      David Vos, Andrew Yates, Maarten de Rijke · Under review
-    </p>
-  </article>
-  <article class="card card--publication">
-    <h3>
-      <a href="#" target="_blank">
-        A Study of Normative Diversity Metrics in News Recommendations
-      </a>
-    </h3>
-    <p class="card__meta">
-      David Vos, Jin Huang, Maarten de Rijke · Under review
-    </p>
-  </article>
   <article class="card card--publication">
     <h3>
       <a href="https://openreview.net/pdf?id=8kyYJs2YkFH" target="_blank">
@@ -65,8 +45,11 @@ layout: default
     <p class="card__meta">
       David Vos, Till Döhmen, Sebastian Schelter · The Table Representation Learning Workshop @ NeurIPS 2022
     </p>
+    <p class="card__summary">
+      Shows that prefix-tuning LLMs can automate data wrangling tasks while requiring only 0.9% of the parameters of full fine-tuning.
+    </p>
     <p class="card__note">
-      Recognised as Best Paper Runner-up
+      Recognised as best paper runner-up.
     </p>
   </article>
   <article class="card card--publication">
@@ -78,7 +61,35 @@ layout: default
     <p class="card__meta">
       Yuyue Zhao, Jin Huang, David Vos, Maarten de Rijke · ECIR 2025
     </p>
-
+    <p class="card__summary">
+      Evaluates how different language models perform as the backbone of neural news recommenders, finding that smaller models can outperform larger ones when properly adapted.
+    </p>
+  </article>
+  <article class="card card--publication">
+    <h3>
+      <a href="#" target="_blank">
+        Reliable and Controllable Learned Sparse News Recommendations for Short-History Users
+      </a>
+    </h3>
+    <p class="card__meta">
+      David Vos, Andrew Yates, Maarten de Rijke · Under review
+    </p>
+    <p class="card__summary">
+      Introduces a learned sparse retrieval (LSR) model that learns sparse representations for users and news, improving retrieval efficiency and short-history recommendation quality.
+    </p>
+  </article>
+  <article class="card card--publication">
+    <h3>
+      <a href="#" target="_blank">
+        A Study of Normative Diversity Metrics in News Recommendations
+      </a>
+    </h3>
+    <p class="card__meta">
+      David Vos, Jin Huang, Maarten de Rijke · Under review
+    </p>
+    <p class="card__summary">
+      Analyzes normative diversity metrics for news recommendations, quantifying their dependence on attribute representation pipelines and editorial context. We also quantify trade-offs between normative diversity and recommendation accuracy.
+    </p>
   </article>
 </section>
 
@@ -87,38 +98,44 @@ layout: default
     <h2>Education</h2>
     <ul class="timeline">
       <li>
+        <h3>PhD in Information Retrieval</h3>
+        <p>University of Amsterdam</p>
+        <p class="timeline__detail">2023 - present · IRLab · with DPG Media</p>
+      </li>
+      <li>
         <h3>Master in Artificial Intelligence</h3>
         <p>University of Amsterdam</p>
-        <p class="timeline__detail">Cum laude</p>
+        <p class="timeline__detail">2019 - 2022 · Cum laude</p>
       </li>
       <li>
         <h3>Minor in Computer Science</h3>
         <p>University of Edinburgh</p>
+        <p class="timeline__detail">2018 · Erasmus exchange</p>
       </li>
       <li>
         <h3>Bachelor in Artificial Intelligence</h3>
         <p>University of Amsterdam</p>
-        <p class="timeline__detail">Cum laude · Honours programme</p>
+        <p class="timeline__detail">2016 - 2019 · Cum laude · Honours programme</p>
       </li>
     </ul>
   </div>
   <div>
     <h2>Recent Talks</h2>
     <ul class="list-with-icons">
-    <li>
-        Lectures on text representation learning, sequential recommender systems and transformers at the University of Amsterdam.
+      <li>
+        2023–2024 · Lectures on text representation learning, sequential recommender systems and transformers at the University of Amsterdam.
       </li>
       <li>
-        <a href="https://searchfutures.github.io/" target="_blank">Search Futures Workshop</a> · The Role of LLMs in Democratic News RecSys.
+        2024 · <a href="https://searchfutures.github.io/" target="_blank">Search Futures Workshop</a> (ECIR) · The Role of LLMs in Democratic News RecSys.
       </li>
       <li>
-        <a href="https://slideslive.com/38993351" target="_blank">NeurIPS 2022 TRL Workshop</a> · Prefix-tuning for data wrangling.
+        2023 · Dutch Seminar on Data Systems Design (DSDSD) · Towards parameter-efficient automation of data wrangling tasks with prefix-tuning.
       </li>
       <li>
-        Talk for the ING Data Science team on LLMs for data management.
+        2023 · Talk for the ING Data Science team on LLMs for data management.
       </li>
       <li>
-        <a href="https://www.youtube.com/watch?v=QfqMG5u2Rms" target="_blank">Dutch Seminar on Data Systems Design</a> · Prefix-tuning for data wrangling.
+        2022 · <a href="https://slideslive.com/38993351" target="_blank">NeurIPS TRL Workshop</a> · Prefix-tuning for data wrangling.
       </li>
     </ul>
   </div>
