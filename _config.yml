@@ -27,6 +27,15 @@ url: "https://davidvos.dev" # the base hostname & protocol for your site, e.g. h
 github_username:  davidvos
 linkedin_username: davidjavos
 scholar_url: "https://scholar.google.com/citations?user=KvMDZ_QAAAAJ&hl=nl"
+twitter_username: davidjavos
+logo: "/assets/favicon.svg"
+image: "/media/me.jpg"
+social:
+  name: David Vos
+  links:
+    - https://github.com/davidvos
+    - https://www.linkedin.com/in/davidjavos/
+    - https://scholar.google.com/citations?user=KvMDZ_QAAAAJ&hl=nl
 
 # Build settings
 theme: minima
@@ -35,6 +44,12 @@ plugins:
 author:
   name: 'David Vos'
   email: 'd.j.a.vos@uva.nl'
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: "/media/me.jpg"
+      description: "PhD student at UvA IRLab focusing on responsible retrieval, ranking, and recommender systems with industry collaboration at DPG Media."
 minima:
   date_format: "%b %-d, %Y"
   # generate social links in footer
