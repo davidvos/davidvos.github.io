@@ -1,7 +1,7 @@
 <ul class="social-media-list">
   {%- if site.scholar_url -%}
     <li>
-      <a href="{{ site.scholar_url }}" target="_blank" rel="noopener">
+      <a href="{{ site.scholar_url }}" target="_blank" rel="noopener noreferrer">
         <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
           <path fill="currentColor" d="M2 8.2L12 3l10 5.2-10 5.2-10-5.2zm3.5 5.17v4.55l6.5 2.99 6.5-2.99v-4.54l-6.5 3.05-6.5-3.06z"/>
           <path fill="currentColor" d="M9.5 12.5v4.4c0 1 .9 1.8 2 1.8s2-.8 2-1.8v-4.4l-2 .93-2-.93z"/>
@@ -13,7 +13,7 @@
 
   {%- if site.github_username -%}
     <li>
-      <a href="https://github.com/{{ site.github_username | cgi_escape | escape }}">
+      <a href="https://github.com/{{ site.github_username | cgi_escape | escape }}" target="_blank" rel="noopener noreferrer">
         <svg class="svg-icon">
           <use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use>
         </svg>
@@ -25,7 +25,7 @@
   {%- assign linkedin_handle = site.linkedin_username | default: site.minima.social_links.linkedin -%}
   {%- if linkedin_handle -%}
     <li>
-      <a href="https://www.linkedin.com/in/{{ linkedin_handle | cgi_escape | escape }}">
+      <a href="https://www.linkedin.com/in/{{ linkedin_handle | cgi_escape | escape }}" target="_blank" rel="noopener noreferrer">
         <svg class="svg-icon">
           <use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use>
         </svg>
