@@ -40,7 +40,7 @@
             stored = localStorage.getItem(storageKey);
           } catch (err) {}
           if (stored === 'dark' || stored === 'light') return stored;
-          return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          return 'light';
         }
 
         var current = getPreferredTheme();
